@@ -1,0 +1,52 @@
+
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>Pomodoro Clock </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="clock.css">
+    </head>
+    <body>
+      <div class="container">
+<p class="text-center">Pomodoro Clock</p>
+    <!-- sessin/break state -->
+    <div class="heading text-center"></div>
+    <!-- timer -->
+    <div id="show" class="text-center"></div>
+    <!-- controls -->
+    <div class="text-center controls">
+<div class="break1">
+      <div class="btn-group" id="btnGrp1" role="group">
+        <button type="button" class="btn btn-warning breakPlus glyphicon glyphicon-plus">+</button>
+        <button type="button" class="btn btn-warning noPointer">
+          Break Time :
+          <h4 class="inline" id="breakDisplay"></h4>
+        </button>
+        <button type="button" class="btn btn-warning breakMinus glyphicon glyphicon-minus">-</button>
+      </div>
+
+      </div>
+      <div class="session1">
+      <div class="btn-group" id="btnGrp2" role="group" aria-label="...">
+        <button type="button" class="btn btn-warning sessionPlus glyphicon glyphicon-plus">+</button>
+        <button type="button" class="btn btn-warning noPointer">
+          Session Time : 
+          <h4 class="inline" id="sessionDisplay"></h4>
+        </button>
+        <button type="button" class="btn btn-warning sessionMinus glyphicon glyphicon-minus">-</button>
+      </div>
+      </div>
+
+      <br><br/>
+      <button id="reset" type="button" class="btn btn-warning center-block">Reset!</button>
+
+    </div>
+
+    <div class="container">
+       
+    </div>
+
+    </div>
+<script src="clock.js"></script>
+    </body>
+</html>

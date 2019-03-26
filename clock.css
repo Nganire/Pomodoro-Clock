@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+body{
+    background: #b3d9ff;
+      width: 100%;
+    height: 100%;
+    
+}
+
+.container{
+
+    width: 30%;
+    margin: 0 auto;
+    background-color: #3399ff;
+    text-align: center;
+
+
+}
+/* "pomodoro clock" */
+p{
+    font-size: 11.2vh;
+    font-weight: bold;
+    font-family: "Shadows Into Light", Arial;
+    color:white;
+    box-shadow: 10px 5px 5px black;
+}
+/* "session/break" */
+.heading{
+    font-family: "Shadows Into Light", Arial;
+    font-size:2vw;
+    color:white;
+    margin-top: 2vw; 
+    font-weight: bold;
+}
+/* timer */
+#show{
+    width: 50%;
+    font-size: 100px;
+    font-weight: bold;
+    cursor: pointer;
+    color:  #FFEEEE;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    margin-left: 100px;
+   /* box-shadow: 10px 5px 5px black;*/
+}
+
+.break1, .session1{
+
+    display: inline-block;
+    vertical-align: top;
+    /*margin-left: 40px;*/
+}
+.controls{
+    margin-top: -10vh;
+}
+#reset {
+    text-align: center;
+    display: block;
+    margin-left: 200px;
+    background-color: #003300;
+}
+/* info */
+h4{
+    color: #00ccff;
+    font-family: Candal, Arial;
+    color:#DC281E !important;
+   /* font-weight: bold;*/
+
+}
+h5{
+    color: #FFEEEE;
+    font-family: Candal, Arial;
+    margin-left: 10px;
+}
+.silver{
+    background-color: blue;
+}
+.inline{
+    display: inline;
+    background-color: silver;
+    margin-right: 10px;
+
+}
+button{
+    font-family: Candal, Arial;
+    display:inline-flex;
+    color: #DC281E !important;
+}
+.noPointer{
+    cursor: default !important; 
+    margin-top: 120px;
+
+  
+}
+
+/* Extra small devices (phones, up to 480px) */
+@media screen and (max-width: 767px) { 
+    p{
+        font-size:400px;
+    }
+    #show{
+        font-size:20px;
+    }
+    .heading{
+        font-size:20px;
+        margin-top: 200px;   
+    }
+    .controls{
+    margin-top: 30px;
+}
+    #btnGrp1{
+        width: 20%;
+        margin: auto;
+    }
+    #btnGrp2{
+        width: 20%;
+        margin: auto;
+    } 
+    #reset{
+        width: 100%;
+        margin: 0 auto;
+
+
+    }
+}
